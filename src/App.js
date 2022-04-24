@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App pt-5">
-      <div className="px-5 mx-5">
+      <div className="px-lg-5 px-xs-1 mx-lg-5">
         <Header />
         <About />
         <Experience />
