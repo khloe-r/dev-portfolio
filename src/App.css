@@ -12,11 +12,35 @@
   background-position: 0 85%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circ-img {
+  /* -webkit-clip-path: circle(50%);
+  -moz-clip-path: circle(47%); */
+  width: 100%;
+}
+
+/* .circ-border {
+  border: 1px black solid;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+} */
+
+.contact-link {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.contact-link:hover {
+  background: linear-gradient(120deg, #FFE600 100%, #FFE600 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+  background-position: 0 85%;
+}
+
+.title-text:hover {
+  background: linear-gradient(120deg, #FFE600 100%, #FFE600 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+  background-position: 0 85%;
 }
