@@ -59,7 +59,7 @@ function Projects() {
       <div className="row mt-4">
         {projects.map((pro, i) => {
           return (
-            <div className="col-lg-4 col-md-6 col-sm-12 text-center ">
+            <div className="col-lg-4 col-md-6 col-sm-12 text-center mb-4">
               <div className="circ-border d-flex justify-content-center align-items-center">
                 <img className="circ-img" src={pro.img}></img>
               </div>

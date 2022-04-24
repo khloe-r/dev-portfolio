@@ -1,6 +1,6 @@
 function Upcoming() {
   return (
-    <div className=" px-5 mt-3 pt-5">
+    <div className=" px-5 mt-5">
       <h3 className="text-end text-bold">
         <span className="title-text">upcoming &#x1f4c5;</span>
       </h3>
