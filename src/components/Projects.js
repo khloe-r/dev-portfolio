@@ -1,9 +1,9 @@
-import gitprofile from "../images/gitprofile.png";
-import just5 from "../images/just5.png";
-import quizly from "../images/quizly.png";
-import smarthub from "../images/smarthub.png";
-import studyo from "../images/study-o.png";
-import watmap from "../images/watmap.png";
+import gitprofile from "../images/projects/gitprofile.png";
+import just5 from "../images/projects/just5.png";
+import quizly from "../images/projects/quizly.png";
+import smarthub from "../images/projects/smarthub.png";
+import studyo from "../images/projects/study-o.png";
+import watmap from "../images/projects/watmap.png";
 
 function Projects() {
   const projects = [
@@ -59,7 +59,7 @@ function Projects() {
 
   return (
     <div className="text-start px-5 mt-5">
-      <h3 className="text-bold">
+      <h3 className="text-bold mb-3">
         <span className="title-text">projects &#x1f4c1;</span>
       </h3>
       <div className="row mt-4">

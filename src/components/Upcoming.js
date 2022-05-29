@@ -1,7 +1,7 @@
 function Upcoming() {
   return (
     <div className=" px-5 mt-5">
-      <h3 className="text-end text-bold">
+      <h3 className="text-end mb-4">
         <span className="title-text">upcoming &#x1f4c5;</span>
       </h3>
       <div className="fs-3 text-start d-flex justify-content-center">
