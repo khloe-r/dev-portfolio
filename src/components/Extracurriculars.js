@@ -1,40 +1,33 @@
-function Experience() {
+function Extracurriculars() {
   const experience = [
     {
-      position: "Software Engineer Intern",
-      company: "Wealthsimple",
-      logo: "ws",
-      date: "May 2022 - Present",
-      experience: ["React Native, Typescript"],
+      position: "Full Stack Developer",
+      company: "UW Product Management Club",
+      logo: "pmclub",
+      date: "January 2022 - Present",
+      experience: ["React, Bootstrap CSS", "Collaborate with designers and developers to construct clubs's first website", "Create and organize site structure and ensure responsiveness"],
     },
     {
-      position: "Software Engineer Intern",
-      company: "West Oak Design Inc.",
-      logo: "wod",
-      date: "May 2021 - August 2021",
-      experience: ["React, Firebase, Bootstrap CSS", "Led project team to build learning management system for children's STEM courses", "Integrated NoSQL database, authentication features, administrative interface, and PayPal payment system"],
-    },
-    {
-      position: "CSSI: Online Participant",
-      company: "Google",
-      logo: "cssi",
-      date: "July 2021 - August 2021",
-      experience: ["JavaScript, Firebase, HTML, Bulma CSS", "Participated in a 4-week intensive computer science summer program for high-achieving students taught by Google engineers"],
+      position: "Web Developer",
+      company: "UW Women in STEM",
+      logo: "wistem",
+      date: "September 2021 - December 2021",
+      experience: ["HTML, CSS, JavaScript", "Maintained club website to keep events and resources updated", "Communicated with social media department and executives to ensure high-quality content"],
     },
   ];
 
   return (
-    <div className=" px-5 mt-5 pb-5 mx-3">
+    <div className="px-5 mt-5 pb-5">
       <h3 className="text-end mb-3">
-        <span className="title-text">experience &#x1f4cc;</span>
+        <span className="title-text">extracurriculars &#127905;</span>
       </h3>
       <div className="mr-5">
         <div>
           {experience.map((exp, index) => {
             const isEven = index % 2 === 0;
             return (
-              <div className={`mb-5 d-flex align-items-start justify-content-${!isEven ? "start text-start" : "end text-end"}`}>
-                {!isEven && (
+              <div className={`mb-5 d-flex align-items-start justify-content-${isEven ? "start text-start" : "end text-end"}`}>
+                {isEven && (
                   <div className="d-flex justify-content-center align-items-center">
                     <img className="exp-logo me-3" src={require("../images/logos/" + exp.logo + ".png")} alt={exp.company} />
                   </div>
@@ -57,7 +50,7 @@ function Experience() {
                     return <p>&#8227; {responsibility}</p>;
                   })}
                 </div>
-                {isEven && (
+                {!isEven && (
                   <div className="d-flex justify-content-center align-items-center">
                     <img className="exp-logo ms-3" src={require("../images/logos/" + exp.logo + ".png")} alt={exp.company} />
                   </div>
@@ -71,4 +64,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Extracurriculars;

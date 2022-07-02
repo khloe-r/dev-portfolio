@@ -1,12 +1,35 @@
 import gitprofile from "../images/projects/gitprofile.png";
-import just5 from "../images/projects/just5.png";
+import slackbot from "../images/projects/marketing-request.png";
+import rentals from "../images/projects/rentals.png";
 import quizly from "../images/projects/quizly.png";
 import smarthub from "../images/projects/smarthub.png";
-import studyo from "../images/projects/study-o.png";
-import watmap from "../images/projects/watmap.png";
+import datafest from "../images/projects/datafest.png";
 
 function Projects() {
   const projects = [
+    {
+      name: "Marketing Request Bot",
+      date: "June 2022",
+      img: slackbot,
+      descript: "Built for non-profit LEAP Canada to manage cross departmental requests for the marketing team",
+      link: "https://github.com/khloe-r/MarketingRequestBot",
+      languages: ["Node.js", "Bolt.js", "CockroachDB", "Sequelize ORM"],
+    },
+    {
+      name: "Rental Reviews",
+      date: "June 2022",
+      img: rentals,
+      descript: "MERN Stack app  built to learn MongoDB allows users to add, edit or delete reviews for Airbnb properties",
+      link: "https://github.com/khloe-r/Rental-Reviews",
+      languages: ["MongoDB", "Node.js", "Express.js", "React"],
+    },
+    {
+      name: "ASA Datafest Submission",
+      date: "April 2022",
+      img: datafest,
+      descript: "Created during UWaterloo Datafest: Report analyzing 5 key factors to improve drug treatment efficacy using insights from over 1.3 million website log entries",
+      languages: ["Python", "Pandas", "Matplotlib"],
+    },
     {
       name: "Quizly",
       date: "January 2022",
@@ -31,30 +54,6 @@ function Projects() {
       link: "https://github.com/khloe-r/Git-Profile",
       languages: ["Flask", "Plotly", "Bootstrap", "HTML"],
     },
-    {
-      name: "Just 5 Minutes",
-      date: "August 2021",
-      img: just5,
-      descript: "Built during The SuperPOSITRON: A productivity tool that is designed to help users delegate their time more wisely by joining communities working towards the same goals.",
-      link: "https://devpost.com/software/just-5-minutes",
-      languages: ["React", "Material UI", "Firebase"],
-    },
-    {
-      name: "Study-O",
-      date: "August 2021",
-      img: studyo,
-      descript: "Built during Google CSSI: All-in-one organizer tool for students, where they can keep track of due dates, homework assignments, write any notes, intern applications, and stay on track with a pomodoro timer!",
-      link: "https://github.com/khloe-r/Study-o",
-      languages: ["HTML", "Bulma", "Firebase"],
-    },
-    {
-      name: "Watmap",
-      date: "October 2021",
-      img: watmap,
-      descript: "Built during Hack the North: University student freelancing web app connecting students with buyers safely close to their school.",
-      link: "https://github.com/JKSKHTN/WatMap",
-      languages: ["React", "Bootstrap", "Firebase"],
-    },
   ];
 
   return (
@@ -72,7 +71,16 @@ function Projects() {
               <h4 className="mt-4">{pro.name}</h4>
 
               <p className="">
-                {pro.date} - <a href={pro.link}>&#x1f517;</a>
+                {pro.date}
+                {pro.link && (
+                  <span>
+                    {" "}
+                    -{" "}
+                    <a href={pro.link} target="_blank" rel="noreferrer">
+                      &#x1f517;
+                    </a>
+                  </span>
+                )}
               </p>
               <p>{pro.descript}</p>
               <p>
