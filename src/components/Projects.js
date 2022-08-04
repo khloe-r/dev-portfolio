@@ -1,6 +1,6 @@
 import gitprofile from "../images/projects/gitprofile.png";
 import slackbot from "../images/projects/marketing-request.png";
-import rentals from "../images/projects/rentals.png";
+import eco from "../images/projects/eco.png";
 import quizly from "../images/projects/quizly.png";
 import smarthub from "../images/projects/smarthub.png";
 import datafest from "../images/projects/datafest.png";
@@ -8,20 +8,20 @@ import datafest from "../images/projects/datafest.png";
 function Projects() {
   const projects = [
     {
+      name: "Eco Challenger",
+      date: "August 2022",
+      img: eco,
+      descript: "MERN Stack app environmental competition incentivizing users to complete eco-friendly actions to win points",
+      link: "https://github.com/khloe-r/eco-challenger",
+      languages: ["MongoDB", "Node.js", "Express.js", "Passport.js", "React", "Chakra-UI"],
+    },
+    {
       name: "Marketing Request Bot",
       date: "June 2022",
       img: slackbot,
       descript: "Built for non-profit LEAP Canada to manage cross departmental requests for the marketing team",
       link: "https://github.com/khloe-r/MarketingRequestBot",
       languages: ["Node.js", "Bolt.js", "CockroachDB", "Sequelize ORM"],
-    },
-    {
-      name: "Rental Reviews",
-      date: "June 2022",
-      img: rentals,
-      descript: "MERN Stack app  built to learn MongoDB allows users to add, edit or delete reviews for Airbnb properties",
-      link: "https://github.com/khloe-r/Rental-Reviews",
-      languages: ["MongoDB", "Node.js", "Express.js", "React"],
     },
     {
       name: "ASA Datafest Submission",
@@ -65,7 +65,7 @@ function Projects() {
         {projects.map((pro, i) => {
           return (
             <div className="col-lg-4 col-md-6 col-sm-12 text-center mb-4">
-              <div className="circ-border d-flex justify-content-center align-items-center">
+              <div className="circ-border d-flex justify-content-center align-items-center" style={{ minHeight: 300 }}>
                 <img className="circ-img" src={pro.img}></img>
               </div>
               <h4 className="mt-4">{pro.name}</h4>

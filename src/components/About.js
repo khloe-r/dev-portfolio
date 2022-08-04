@@ -10,7 +10,8 @@ function About() {
         <a href="https://www.wealthsimple.com/" target="_blank" rel="noreferrer" className="highlight">
           Wealthsimple
         </a>
-        .<br /> <br />I can’t wait to change the world with CS! Currently, I'm seeking a backend development role for Winter 2023!
+        .<br /> <br />
+        Currently, I'm seeking a backend development role for Winter 2023!
       </p>
     </div>
   );
