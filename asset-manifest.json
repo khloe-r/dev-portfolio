@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/dev-portfolio/static/css/main.caf8a14f.css",
-    "main.js": "/dev-portfolio/static/js/main.ee3050c1.js",
+    "main.js": "/dev-portfolio/static/js/main.7b055ac8.js",
     "static/js/787.eef0f175.chunk.js": "/dev-portfolio/static/js/787.eef0f175.chunk.js",
-    "static/media/rentals.png": "/dev-portfolio/static/media/rentals.d4fa18333a95f6f95a11.png",
     "static/media/datafest.png": "/dev-portfolio/static/media/datafest.700379135b0908057280.png",
     "static/media/marketing-request.png": "/dev-portfolio/static/media/marketing-request.3731ddab85622897eb9f.png",
     "static/media/gitprofile.png": "/dev-portfolio/static/media/gitprofile.23f30776904f079ad95d.png",
     "static/media/smarthub.png": "/dev-portfolio/static/media/smarthub.4bf3f7f2b47d4b8973f3.png",
     "static/media/quizly.png": "/dev-portfolio/static/media/quizly.6ecb65ca04308ec09741.png",
+    "static/media/eco.png": "/dev-portfolio/static/media/eco.645096542d8cd4a39ca6.png",
     "static/media/ws.png": "/dev-portfolio/static/media/ws.86fdb2ac9a4030a376d3.png",
     "static/media/wod.png": "/dev-portfolio/static/media/wod.a05aa4c9915c67de4ec8.png",
     "static/media/pmclub.png": "/dev-portfolio/static/media/pmclub.aea3ebf3c247dfe56274.png",
     "index.html": "/dev-portfolio/index.html",
     "main.caf8a14f.css.map": "/dev-portfolio/static/css/main.caf8a14f.css.map",
-    "main.ee3050c1.js.map": "/dev-portfolio/static/js/main.ee3050c1.js.map",
+    "main.7b055ac8.js.map": "/dev-portfolio/static/js/main.7b055ac8.js.map",
     "787.eef0f175.chunk.js.map": "/dev-portfolio/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.caf8a14f.css",
-    "static/js/main.ee3050c1.js"
+    "static/js/main.7b055ac8.js"
   ]
 }
