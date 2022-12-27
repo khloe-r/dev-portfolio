@@ -26,7 +26,7 @@ function Contact() {
       <p>
         {socials.map((soc, index) => {
           return (
-            <span>
+            <span key={index}>
               <a className="contact-link" href={soc.link} target="_blank" rel="noreferrer">
                 {soc.name}
               </a>

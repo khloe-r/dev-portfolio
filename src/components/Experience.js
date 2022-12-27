@@ -1,11 +1,24 @@
 function Experience() {
   const experience = [
     {
-      position: "Software Engineer Intern",
+      position: "Software Engineer Intern, Book of Records",
       company: "Wealthsimple",
       logo: "ws",
-      date: "May 2022 - Present",
-      experience: ["React Native, Typescript"],
+      date: "January 2023 - Present",
+      experience: ["Coming Soon!"],
+    },
+    {
+      position: "Software Engineer Intern, Unified Experience",
+      company: "Wealthsimple",
+      logo: "ws",
+      date: "May 2022 - August 2022",
+      experience: [
+        "React Native, Typescript, Node.js, Datadog, Jest",
+        "Implemented UI designs for Wealthsimple unified app launch",
+        "Collaborated to build utility functions, create interactive Storybook documentation, unit tests and mobile components, meeting WCAG",
+        "Optimized script converting SVGs to React Native components, decreasing build time by 85%",
+        "Created scripts and analytics dashboard to measure adoption of new design system across 6 repositories",
+      ],
     },
     {
       position: "Software Engineer Intern",

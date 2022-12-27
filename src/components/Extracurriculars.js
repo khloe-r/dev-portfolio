@@ -1,10 +1,17 @@
 function Extracurriculars() {
   const experience = [
     {
+      position: "Project Developer",
+      company: "UW Blueprint",
+      logo: "blueprint",
+      date: "September 2022 - Present",
+      experience: ["React, Typescript, Node.js, Express.js, PostgreSQL", "Collaborate with projeect team to build technology solution for Canadian Children's Book Centre"],
+    },
+    {
       position: "Full Stack Developer",
       company: "UW Product Management Club",
       logo: "pmclub",
-      date: "January 2022 - Present",
+      date: "January 2022 - August 2022",
       experience: ["React, Bootstrap CSS", "Collaborate with designers and developers to construct clubs's first website", "Create and organize site structure and ensure responsiveness"],
     },
     {

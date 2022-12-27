@@ -10,23 +10,36 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState, useRef } from "react";
 
-import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  var offset = 0;
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+  };
 
   useEffect(() => {
     setTimeout(function () {
       setLoading(false);
     }, 2000);
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
   }, []);
 
   const ref = useRef();
 
   const scrollTo = (page) => {
     ref.current.scrollTo(page);
-    console.log("scrolling");
   };
+
+  console.log(width);
+  if (width < 978) {
+    console.log("oh no");
+    offset = 1;
+  }
 
   return (
     <div className="App pt-xs-5">
@@ -35,12 +48,17 @@ function App() {
           <Loading />
         ) : (
           <>
-            <Parallax pages={9} ref={ref}>
-              <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: "#FFF27C" }} />
-              <ParallaxLayer factor={1.5} offset={3.5} speed={1} style={{ backgroundColor: "#FFF27C" }} />
-              <ParallaxLayer offset={6.5} speed={1} style={{ backgroundColor: "#FFF27C" }} />
-              <ParallaxLayer offset={8} speed={1} style={{ backgroundColor: "#FFF27C" }} />
-
+            <Parallax pages={10 + offset * 5} ref={ref}>
+              {offset ? (
+                <></>
+              ) : (
+                <>
+                  <ParallaxLayer offset={1 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
+                  <ParallaxLayer factor={2.5} offset={4 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
+                  <ParallaxLayer offset={7.5 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
+                  <ParallaxLayer offset={9 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
+                </>
+              )}
               <ParallaxLayer offset={0.3} speed={0.5} factor={3} style={{ marginLeft: "20%", fontSize: 40 }}>
                 &#128029;
               </ParallaxLayer>
@@ -71,7 +89,7 @@ function App() {
                   justifyContent: "center",
                 }}
               >
-                <Header scrollTo={scrollTo} />
+                <Header scrollTo={scrollTo} offset={offset} />
               </ParallaxLayer>
 
               <ParallaxLayer
@@ -88,7 +106,7 @@ function App() {
 
               <ParallaxLayer
                 factor={1}
-                offset={2}
+                offset={2.5 + offset}
                 speed={-0}
                 style={{
                   display: "flex",
@@ -101,7 +119,7 @@ function App() {
 
               <ParallaxLayer
                 factor={1}
-                offset={3.5}
+                offset={4.5 + offset * 2}
                 speed={-0}
                 style={{
                   display: "flex",
@@ -113,9 +131,8 @@ function App() {
               </ParallaxLayer>
 
               <ParallaxLayer
-                offset={5}
+                offset={6.0 + offset * 3.2}
                 speed={0.5}
-                // onClick={() => parallax.current.scrollTo(2)}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -126,9 +143,8 @@ function App() {
               </ParallaxLayer>
 
               <ParallaxLayer
-                offset={6.5}
+                offset={7.5 + offset * 4}
                 speed={0.5}
-                // onClick={() => parallax.current.scrollTo(2)}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -139,9 +155,8 @@ function App() {
               </ParallaxLayer>
 
               <ParallaxLayer
-                offset={7.5}
+                offset={8.5 + offset * 4.2}
                 speed={0.1}
-                // onClick={() => parallax.current.scrollTo(2)}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -152,9 +167,8 @@ function App() {
               </ParallaxLayer>
 
               <ParallaxLayer
-                offset={8}
+                offset={9 + offset * 4.8}
                 speed={0.1}
-                // onClick={() => parallax.current.scrollTo(2)}
                 style={{
                   display: "flex",
                   alignItems: "center",

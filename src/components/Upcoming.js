@@ -7,8 +7,8 @@ function Upcoming() {
       <div className="fs-3 text-start d-flex justify-content-center">
         <ul>
           <li>building new projects!</li>
-          <li>learning about backend + mobile development!</li>
-          <li>currently seeking a Winter 2023 internship!</li>
+          <li>diving deeper into backend + mobile development!</li>
+          <li>currently seeking a Winter 2024 internship!</li>
         </ul>
       </div>
     </div>
