@@ -35,9 +35,7 @@ function App() {
     ref.current.scrollTo(page);
   };
 
-  console.log(width);
   if (width < 978) {
-    console.log("oh no");
     offset = 1;
   }
 
@@ -131,7 +129,7 @@ function App() {
               </ParallaxLayer>
 
               <ParallaxLayer
-                offset={6.0 + offset * 3.2}
+                offset={6.5 + offset * 3.2}
                 speed={0.5}
                 style={{
                   display: "flex",

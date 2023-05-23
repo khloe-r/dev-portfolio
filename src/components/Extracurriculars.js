@@ -1,11 +1,23 @@
 function Extracurriculars() {
   const experience = [
     {
+      position: "Project Lead",
+      company: "UW Blueprint",
+      logo: "blueprint",
+      date: "May 2023 - Present",
+      experience: ["Coming Soon!"],
+    },
+    {
       position: "Project Developer",
       company: "UW Blueprint",
       logo: "blueprint",
-      date: "September 2022 - Present",
-      experience: ["React, Typescript, Node.js, Express.js, PostgreSQL", "Collaborate with projeect team to build technology solution for Canadian Children's Book Centre"],
+      date: "September 2022 - April 2023",
+      experience: [
+        "React, Typescript, Node.js, Express.js, PostgreSQL",
+        "Collaborated with development team to build review and creator booking platform for Canadian Children Book Centre",
+        "Implemented creator management tools including administrative dashboard, searchable directory for users, and creator multi-step onboarding form using Typescript, React, Express.js, Node.js, and PostgreSQL",
+        "Lead creator booking flow development, scoping tickets, and assisting developers through pair-programming",
+      ],
     },
     {
       position: "Full Stack Developer",

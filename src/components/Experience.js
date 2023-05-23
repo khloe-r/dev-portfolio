@@ -4,8 +4,13 @@ function Experience() {
       position: "Software Engineer Intern, Book of Records",
       company: "Wealthsimple",
       logo: "ws",
-      date: "January 2023 - Present",
-      experience: ["Coming Soon!"],
+      date: "January 2023 - April 2023",
+      experience: [
+        "Java, Python, Typescript, Apache Airflow, Sidekiq, GraphQL, Ruby on Rails, AWS",
+        "Built 9 statement management tools by connecting GraphQL mutations in Ruby on Rails to Typescript, React interface enabling the financial operations team to handle data entry tasks autonomously and eliminate manual data migrations",
+        "Implemented email statement distribution using Java, Python and Apache Airflow to safely send statements from AWS S3 to clients with potential to save up to $200,000 per year by eliminating the need to mail up to 4000 paper statements",
+        "Created nightly Sidekiq worker saving 5+ hours by automating the generation of monthly statement data",
+      ],
     },
     {
       position: "Software Engineer Intern, Unified Experience",
@@ -14,10 +19,10 @@ function Experience() {
       date: "May 2022 - August 2022",
       experience: [
         "React Native, Typescript, Node.js, Datadog, Jest",
-        "Implemented UI designs for Wealthsimple unified app launch",
-        "Collaborated to build utility functions, create interactive Storybook documentation, unit tests and mobile components, meeting WCAG",
-        "Optimized script converting SVGs to React Native components, decreasing build time by 85%",
-        "Created scripts and analytics dashboard to measure adoption of new design system across 6 repositories",
+        "Implemented React Native UI designs and Jest unit testing for Wealthsimple unified app launch",
+        "Developed mobile components, semantic layer utility functions, and interactive Storybook documentation stories meeting Web Content Accessibility Guidelines to enable 50+ mobile developers to build app UIs more efficiently",
+        "Optimized Typescript script converting SVGs to React Native components, decreasing build time by 85%",
+        "Created Datadog dashboard of component usage across 6 repositories by developing Node.js scripts and GitHub Action",
       ],
     },
     {
@@ -25,7 +30,11 @@ function Experience() {
       company: "West Oak Design Inc.",
       logo: "wod",
       date: "May 2021 - August 2021",
-      experience: ["React, Firebase, Bootstrap CSS", "Led project team to build learning management system for children's STEM courses", "Integrated NoSQL database, authentication features, administrative interface, and PayPal payment system"],
+      experience: [
+        "React, Firebase, Bootstrap CSS",
+        "Led development team to build complete learning management system, Smart Hub, in 3 months using Firebase NoSQL database, Cloud Storage and authentication and secure payment with PayPal",
+        "Redirected project from incompatible static frontend framework, helping to teach co-workers React and Bootstrap CSS",
+      ],
     },
     {
       position: "CSSI: Online Participant",

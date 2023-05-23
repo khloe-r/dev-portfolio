@@ -6,7 +6,7 @@ function About() {
       </h3>
       <p className="col-lg-5">
         Hey there! I am currently in my 2nd year of the Computer Science and Business Administration Double Degree at the University of Waterloo and Wilfrid Laurier University. <br /> <br />
-        This winter I’m interning as a Software Engineer at{" "}
+        This past winter I completed by second internship as a Software Engineer at{" "}
         <a href="https://www.wealthsimple.com/" target="_blank" rel="noreferrer" className="highlight">
           Wealthsimple
         </a>
