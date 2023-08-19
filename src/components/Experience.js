@@ -6,7 +6,7 @@ function Experience() {
       logo: "ws",
       date: "January 2023 - April 2023",
       experience: [
-        "Java, Python, Typescript, Apache Airflow, Sidekiq, GraphQL, Ruby on Rails, AWS",
+        "Java, Ruby on Rails, Typescript, Python, Apache Airflow, Sidekiq, GraphQL, AWS",
         "Built 9 statement management tools by connecting GraphQL mutations in Ruby on Rails to Typescript, React interface enabling the financial operations team to handle data entry tasks autonomously and eliminate manual data migrations",
         "Implemented email statement distribution using Java, Python and Apache Airflow to safely send statements from AWS S3 to clients with potential to save up to $200,000 per year by eliminating the need to mail up to 4000 paper statements",
         "Created nightly Sidekiq worker saving 5+ hours by automating the generation of monthly statement data",

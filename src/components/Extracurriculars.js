@@ -5,19 +5,19 @@ function Extracurriculars() {
       company: "UW Blueprint",
       logo: "blueprint",
       date: "May 2023 - Present",
-      experience: ["Coming Soon!"],
+      experience: [
+        "React, Typescript, Node.js, Express.js, MongoDB, PrismaORM",
+        "Lead technical development team to build refugee and volunteer matching platform for non-profit Haven",
+        "Design project architecture including matching algorithm based on requirements from organization founders",
+        "Organize team development practices by scoping tickets, mentoring developers, and reviewing pull requests",
+      ],
     },
     {
       position: "Project Developer",
       company: "UW Blueprint",
       logo: "blueprint",
       date: "September 2022 - April 2023",
-      experience: [
-        "React, Typescript, Node.js, Express.js, PostgreSQL",
-        "Collaborated with development team to build review and creator booking platform for Canadian Children Book Centre",
-        "Implemented creator management tools including administrative dashboard, searchable directory for users, and creator multi-step onboarding form using Typescript, React, Express.js, Node.js, and PostgreSQL",
-        "Lead creator booking flow development, scoping tickets, and assisting developers through pair-programming",
-      ],
+      experience: ["React, Typescript, Node.js, Express.js, PostgreSQL", "Collaborated with development team to build review and creator booking platform for Canadian Children Book Centre"],
     },
     {
       position: "Full Stack Developer",
@@ -31,7 +31,7 @@ function Extracurriculars() {
       company: "UW Women in STEM",
       logo: "wistem",
       date: "September 2021 - December 2021",
-      experience: ["HTML, CSS, JavaScript", "Maintained club website to keep events and resources updated", "Communicated with social media department and executives to ensure high-quality content"],
+      experience: ["HTML, CSS, JavaScript", "Maintained club website to keep events and resources updated with high-quality content"],
     },
   ];
 
