@@ -2,11 +2,19 @@ import gitprofile from "../images/projects/gitprofile.png";
 import slackbot from "../images/projects/marketing-request.png";
 import eco from "../images/projects/eco.png";
 import quizly from "../images/projects/quizly.png";
-import smarthub from "../images/projects/smarthub.png";
+import chess from "../images/projects/chess.png";
 import datafest from "../images/projects/datafest.png";
 
 function Projects() {
   const projects = [
+    {
+      name: "Chess",
+      date: "December 2022",
+      img: chess,
+      descript: "Object Oriented Software Development Project: Chess game with graphical interface and computer opponent",
+      link: "",
+      languages: ["C++"],
+    },
     {
       name: "Eco Challenger",
       date: "August 2022",
@@ -37,14 +45,6 @@ function Projects() {
       descript: "Kahoot clone with linked host and user interfaces",
       link: "https://github.com/khloe-r/QuizlyGame",
       languages: ["Node.js", "Express.js", "Socket.io", "SQLite"],
-    },
-    {
-      name: "Smarthub",
-      date: "Summer 2021",
-      img: smarthub,
-      descript: "Built during West Oak Design Inc. Internship: A complete learning management system allowing parents to purchase STEM-based courses through PayPal. ",
-      link: "https://gosmarthub.com/",
-      languages: ["React", "Bootstrap", "Firebase"],
     },
     {
       name: "GitProfile",
