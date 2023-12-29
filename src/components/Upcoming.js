@@ -8,7 +8,7 @@ function Upcoming() {
         <ul>
           <li>building new projects!</li>
           <li>diving deeper into backend + mobile development!</li>
-          <li>currently seeking a Winter 2024 internship!</li>
+          <li>currently seeking a Winter/Summer 2025 internship!</li>
         </ul>
       </div>
     </div>

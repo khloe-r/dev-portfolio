@@ -4,7 +4,7 @@ function Extracurriculars() {
       position: "Project Lead",
       company: "UW Blueprint",
       logo: "blueprint",
-      date: "May 2023 - Present",
+      date: "May 2023 - December 2023",
       experience: [
         "React, Typescript, Node.js, Express.js, MongoDB, PrismaORM",
         "Lead technical development team to build refugee and volunteer matching platform for non-profit Haven",
@@ -18,20 +18,6 @@ function Extracurriculars() {
       logo: "blueprint",
       date: "September 2022 - April 2023",
       experience: ["React, Typescript, Node.js, Express.js, PostgreSQL", "Collaborated with development team to build review and creator booking platform for Canadian Children Book Centre"],
-    },
-    {
-      position: "Full Stack Developer",
-      company: "UW Product Management Club",
-      logo: "pmclub",
-      date: "January 2022 - August 2022",
-      experience: ["React, Bootstrap CSS", "Collaborate with designers and developers to construct clubs's first website", "Create and organize site structure and ensure responsiveness"],
-    },
-    {
-      position: "Web Developer",
-      company: "UW Women in STEM",
-      logo: "wistem",
-      date: "September 2021 - December 2021",
-      experience: ["HTML, CSS, JavaScript", "Maintained club website to keep events and resources updated with high-quality content"],
     },
   ];
 

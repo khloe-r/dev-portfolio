@@ -46,41 +46,40 @@ function App() {
           <Loading />
         ) : (
           <>
-            <Parallax pages={10 + offset * 5} ref={ref}>
+            <Parallax pages={9 + offset * 5} ref={ref}>
               {offset ? (
                 <></>
               ) : (
                 <>
                   <ParallaxLayer offset={1 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
-                  <ParallaxLayer factor={2.5} offset={4 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
-                  <ParallaxLayer offset={7.5 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
-                  <ParallaxLayer offset={9 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
+                  <ParallaxLayer factor={1.7} offset={4 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
+                  <ParallaxLayer offset={6.8 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
+                  <ParallaxLayer offset={8 + offset} speed={1} style={{ backgroundColor: "#FFF27C" }} />
                 </>
               )}
               <ParallaxLayer offset={0.3} speed={0.5} factor={3} style={{ marginLeft: "20%", fontSize: 40 }}>
                 &#128029;
               </ParallaxLayer>
-              <ParallaxLayer offset={4.3} speed={0.5} factor={3} style={{ marginLeft: "-40%", fontSize: 40 }}>
+              <ParallaxLayer offset={3.8} speed={0.5} factor={3} style={{ marginLeft: "-40%", fontSize: 40 }}>
                 &#128029;
               </ParallaxLayer>
-              <ParallaxLayer offset={7.3} speed={0.5} factor={3} style={{ marginLeft: "40%", fontSize: 40 }}>
+              <ParallaxLayer offset={6.3} speed={0.5} factor={3} style={{ marginLeft: "40%", fontSize: 40 }}>
                 &#128029;
               </ParallaxLayer>
 
-              <ParallaxLayer offset={0.8} speed={0.5} style={{ marginLeft: "-25%", fontSize: 40 }}>
+              <ParallaxLayer offset={0.3} speed={0.5} style={{ marginLeft: "-25%", fontSize: 40 }}>
                 &lt;/&gt;
               </ParallaxLayer>
 
               <ParallaxLayer sticky={{ start: 1, end: 9 }} speed={0.5} style={{ display: "flex", alignItems: "flex-end", justifyContent: "flex-start", height: 60, width: 200 }}>
-                <p className="ms-4 highlight">
-                  <a onClick={() => ref.current.scrollTo(0)}> ^ back to top</a>
-                </p>
+                <button className="nav-button" onClick={() => ref.current.scrollTo(0)}>
+                  <p className="ms-4 highlight">^ back to top</p>
+                </button>
               </ParallaxLayer>
 
               <ParallaxLayer
                 offset={0}
                 speed={0.1}
-                // onClick={() => parallax.current.scrollTo(1)}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -117,7 +116,7 @@ function App() {
 
               <ParallaxLayer
                 factor={1}
-                offset={4.5 + offset * 2}
+                offset={4 + offset * 2}
                 speed={-0}
                 style={{
                   display: "flex",
@@ -129,7 +128,7 @@ function App() {
               </ParallaxLayer>
 
               <ParallaxLayer
-                offset={6.5 + offset * 3.2}
+                offset={5.5 + offset * 3.2}
                 speed={0.5}
                 style={{
                   display: "flex",
@@ -141,7 +140,7 @@ function App() {
               </ParallaxLayer>
 
               <ParallaxLayer
-                offset={7.5 + offset * 4}
+                offset={6.8 + offset * 4}
                 speed={0.5}
                 style={{
                   display: "flex",
@@ -153,7 +152,7 @@ function App() {
               </ParallaxLayer>
 
               <ParallaxLayer
-                offset={8.5 + offset * 4.2}
+                offset={7 + offset * 4.2}
                 speed={0.1}
                 style={{
                   display: "flex",
@@ -165,7 +164,7 @@ function App() {
               </ParallaxLayer>
 
               <ParallaxLayer
-                offset={9 + offset * 4.8}
+                offset={8 + offset * 4.8}
                 speed={0.1}
                 style={{
                   display: "flex",

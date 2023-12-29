@@ -42,3 +42,9 @@
   background-size: 100% 35%;
   background-position: 0 85%;
 }
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0);
+  ;
+  border: none;
+}

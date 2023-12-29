@@ -7,8 +7,8 @@ function Experience() {
       date: "January 2023 - April 2023",
       experience: [
         "Java, Ruby on Rails, Typescript, Python, Apache Airflow, Sidekiq, GraphQL, AWS",
-        "Built 9 statement management tools by connecting GraphQL mutations in Ruby on Rails to Typescript, React interface enabling the financial operations team to handle data entry tasks autonomously and eliminate manual data migrations",
-        "Implemented email statement distribution using Java, Python and Apache Airflow to safely send statements from AWS S3 to clients with potential to save up to $200,000 per year by eliminating the need to mail up to 4000 paper statements",
+        "Built 9 statement management tools with GraphQL mutations in Ruby on Rails and Typescript, React interface enabling financial team to handle data entry tasks autonomously",
+        "Implemented email statement distribution using Java, Python and Apache Airflow to safely send statements from AWS S3 to clients to save up to $200,000 per year",
         "Created nightly Sidekiq worker saving 5+ hours by automating the generation of monthly statement data",
       ],
     },
@@ -20,8 +20,7 @@ function Experience() {
       experience: [
         "React Native, Typescript, Node.js, Datadog, Jest",
         "Implemented React Native UI designs and Jest unit testing for Wealthsimple unified app launch",
-        "Developed mobile components, semantic layer utility functions, and interactive Storybook documentation stories meeting Web Content Accessibility Guidelines to enable 50+ mobile developers to build app UIs more efficiently",
-        "Optimized Typescript script converting SVGs to React Native components, decreasing build time by 85%",
+        "Developed mobile components, utility functions, and interactive Storybook documentation to enable 50+ mobile developers to build app UIs more efficiently",
         "Created Datadog dashboard of component usage across 6 repositories by developing Node.js scripts and GitHub Action",
       ],
     },
@@ -30,14 +29,10 @@ function Experience() {
       company: "West Oak Design Inc.",
       logo: "wod",
       date: "May 2021 - August 2021",
-      experience: [
-        "React, Firebase, Bootstrap CSS",
-        "Led development team to build complete learning management system, Smart Hub, in 3 months using Firebase NoSQL database, Cloud Storage and authentication and secure payment with PayPal",
-        "Redirected project from incompatible static frontend framework, helping to teach co-workers React and Bootstrap CSS",
-      ],
+      experience: ["React, Firebase, Bootstrap CSS", "Led development team to build complete learning management system, Smart Hub, in 3 months using Firebase NoSQL database, Cloud Storage and authentication"],
     },
     {
-      position: "CSSI: Online Participant",
+      position: "Computer Science Summer Institute Participant",
       company: "Google",
       logo: "cssi",
       date: "July 2021 - August 2021",

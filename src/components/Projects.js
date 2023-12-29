@@ -8,6 +8,14 @@ import datafest from "../images/projects/datafest.png";
 function Projects() {
   const projects = [
     {
+      name: "Apple Watch Notion Integration",
+      date: "December 2023",
+      img: gitprofile,
+      descript: "Apple Watch App allowing users to update Notion budgeting database on the go",
+      link: "https://github.com/khloe-r/apple-watch-notion-integration",
+      languages: ["Swift"],
+    },
+    {
       name: "Chess",
       date: "December 2022",
       img: chess,
@@ -46,14 +54,6 @@ function Projects() {
       link: "https://github.com/khloe-r/QuizlyGame",
       languages: ["Node.js", "Express.js", "Socket.io", "SQLite"],
     },
-    {
-      name: "GitProfile",
-      date: "August 2021",
-      img: gitprofile,
-      descript: "Github profile viewer showing user data in an easy-to-view format including charts showing repository analytics.",
-      link: "https://github.com/khloe-r/Git-Profile",
-      languages: ["Flask", "Plotly", "Bootstrap", "HTML"],
-    },
   ];
 
   return (
@@ -66,7 +66,7 @@ function Projects() {
           return (
             <div className="col-lg-4 col-md-6 col-sm-12 text-center mb-4" key={i}>
               <div className="circ-border d-flex justify-content-center align-items-center" style={{ minHeight: 300 }}>
-                <img className="circ-img" src={pro.img}></img>
+                <img className="circ-img" src={pro.img} alt={pro.name + "project preview"}></img>
               </div>
               <h4 className="mt-4">{pro.name}</h4>
 
@@ -88,7 +88,7 @@ function Projects() {
                   return (
                     <span>
                       {" "}
-                      {index != 0 && "| "}
+                      {index !== 0 && "| "}
                       <span className="highlight"> {lang}</span>{" "}
                     </span>
                   );

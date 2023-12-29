@@ -12,19 +12,19 @@ function Header({ scrollTo, offset }) {
         ) : (
           <>
             <span>
-              <a className="highlight px-2" onClick={() => scrollTo(2.2)}>
+              <button className="highlight nav-button px-2" onClick={() => scrollTo(2.2)}>
                 Experience
-              </a>
+              </button>
             </span>
             <span>
-              <a className="highlight px-2" onClick={() => scrollTo(5.7)}>
+              <button className="highlight nav-button px-2" onClick={() => scrollTo(5.7)}>
                 Projects
-              </a>
+              </button>
             </span>
             <span>
-              <a className="highlight px-2" onClick={() => scrollTo(8.4)}>
+              <button className="highlight nav-button px-2" onClick={() => scrollTo(8.4)}>
                 Contact
-              </a>
+              </button>
             </span>
           </>
         )}
