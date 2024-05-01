@@ -1,4 +1,6 @@
-function Contact() {
+import { Heading } from "./Heading";
+
+function Contact({ prop }) {
   const socials = [
     {
       name: "github",
@@ -19,11 +21,9 @@ function Contact() {
   ];
 
   return (
-    <div className="text-start px-5 mt-5">
-      <h3 className="text-bold">
-        <span className="title-text">contact me &#x1f4de;</span>
-      </h3>
-      <p>
+    <div className="text-start px-lg-5 px-3 mt-5" ref={prop}>
+      <Heading title={"contact"} />
+      <p className="ps-lg-5 ms-lg-5 px-2 mt-3">
         {socials.map((soc, index) => {
           return (
             <span key={index}>

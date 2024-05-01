@@ -1,16 +1,24 @@
-import gitprofile from "../images/projects/gitprofile.png";
+import applewatch from "../images/projects/apple-watch.png";
 import slackbot from "../images/projects/marketing-request.png";
 import eco from "../images/projects/eco.png";
-import quizly from "../images/projects/quizly.png";
+import revealo from "../images/projects/reveal-o.png";
 import chess from "../images/projects/chess.png";
-import datafest from "../images/projects/datafest.png";
+import { Heading } from "./Heading";
 
-function Projects() {
+function Projects({ prop }) {
   const projects = [
+    {
+      name: "Reveal-o",
+      date: "April 2024",
+      img: revealo,
+      descript: "Daily word game where users attempt to guess a phrase as fast as possible",
+      link: "https://github.com/khloe-r/reveal-o",
+      languages: ["MongoDB", "Typescript", "React", "Next.js"],
+    },
     {
       name: "Apple Watch Notion Integration",
       date: "December 2023",
-      img: gitprofile,
+      img: applewatch,
       descript: "Apple Watch App allowing users to update Notion budgeting database on the go",
       link: "https://github.com/khloe-r/apple-watch-notion-integration",
       languages: ["Swift"],
@@ -27,7 +35,7 @@ function Projects() {
       name: "Eco Challenger",
       date: "August 2022",
       img: eco,
-      descript: "MERN Stack app environmental competition incentivizing users to complete eco-friendly actions to win points",
+      descript: "Environmental competition incentivizing users to complete eco-friendly actions to win points",
       link: "https://github.com/khloe-r/eco-challenger",
       languages: ["MongoDB", "Node.js", "Express.js", "Passport.js", "React", "Chakra-UI"],
     },
@@ -39,36 +47,19 @@ function Projects() {
       link: "https://github.com/khloe-r/MarketingRequestBot",
       languages: ["Node.js", "Bolt.js", "CockroachDB", "Sequelize ORM"],
     },
-    {
-      name: "ASA Datafest Submission",
-      date: "April 2022",
-      img: datafest,
-      descript: "Created during UWaterloo Datafest: Report analyzing 5 key factors to improve drug treatment efficacy using insights from over 1.3 million website log entries",
-      languages: ["Python", "Pandas", "Matplotlib"],
-    },
-    {
-      name: "Quizly",
-      date: "January 2022",
-      img: quizly,
-      descript: "Kahoot clone with linked host and user interfaces",
-      link: "https://github.com/khloe-r/QuizlyGame",
-      languages: ["Node.js", "Express.js", "Socket.io", "SQLite"],
-    },
   ];
 
   return (
-    <div className="text-start px-5 mt-5">
-      <h3 className="text-bold mb-3">
-        <span className="title-text">projects &#x1f4c1;</span>
-      </h3>
-      <div className="row mt-4">
+    <div className="text-start px-lg-5 px-3 mt-5" ref={prop}>
+      <Heading title={"projects"} />
+      <div className="row ms-lg-5 ps-lg-5 px-2">
         {projects.map((pro, i) => {
           return (
-            <div className="col-lg-4 col-md-6 col-sm-12 text-center mb-4" key={i}>
-              <div className="circ-border d-flex justify-content-center align-items-center" style={{ minHeight: 300 }}>
+            <div className="col-lg-2 col-md-6 col-sm-12 text-center" key={i}>
+              <div className="circ-border d-flex justify-content-center align-items-center" style={{ minHeight: 200 }}>
                 <img className="circ-img" src={pro.img} alt={pro.name + "project preview"}></img>
               </div>
-              <h4 className="mt-4">{pro.name}</h4>
+              <h4 className="mt-2">{pro.name}</h4>
 
               <p className="">
                 {pro.date}
@@ -83,13 +74,12 @@ function Projects() {
                 )}
               </p>
               <p>{pro.descript}</p>
-              <p>
-                {pro.languages.map((lang, index) => {
+              <p style={{ lineHeight: 1.75 }}>
+                {pro.languages.map((lang) => {
                   return (
                     <span>
                       {" "}
-                      {index !== 0 && "| "}
-                      <span className="highlight"> {lang}</span>{" "}
+                      <span className="tag px-2"> {lang}</span>{" "}
                     </span>
                   );
                 })}

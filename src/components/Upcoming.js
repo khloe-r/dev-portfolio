@@ -1,13 +1,11 @@
+import { Heading } from "./Heading";
 function Upcoming() {
   return (
-    <div className=" px-5 mt-5">
-      <h3 className="text-end mb-4">
-        <span className="title-text">upcoming &#x1f4c5;</span>
-      </h3>
-      <div className="fs-3 text-start d-flex justify-content-center">
+    <div className="px-lg-5 px-3 mt-5">
+      <Heading title={"upcoming"} />
+      <div className="mt-3 ms-lg-5 ps-lg-5 px-1 fs-3 text-start d-flex justify-content-start">
         <ul>
           <li>building new projects!</li>
-          <li>diving deeper into backend + mobile development!</li>
           <li>currently seeking a Winter/Summer 2025 internship!</li>
         </ul>
       </div>

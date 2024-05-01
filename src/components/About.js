@@ -1,20 +1,15 @@
+import { Heading } from "./Heading";
+
 function About() {
   return (
-    <div className="text-start px-5 mt-5">
-      <h3 className="text-bold mb-3">
-        <span className="title-text">about me &#x1f4bb;</span>
-      </h3>
-      <p className="col-lg-5">
+    <div className="text-start px-lg-5 px-3 mt-5">
+      <Heading title={"about me"} />
+      <p className="col-lg-7 font-body ms-lg-5 ps-lg-5 ms-2 mt-3">
         Hey there! I am currently in my 3rd year of the Computer Science and Business Administration Double Degree at the University of Waterloo and Wilfrid Laurier University. <br /> <br />
-        This year I am completing my third and fourth internship as a Software Engineer Intern at{" "}
-        <a href="https://www.stackadapt.com/" target="_blank" rel="noreferrer" className="highlight">
-          StackAdapt
-        </a>{" "}
-        this winter and{" "}
+        This summer I am completing my fifth internship as a Software Engineer Intern at{" "}
         <a href="https://stripe.com/" target="_blank" rel="noreferrer" className="highlight">
           Stripe
         </a>{" "}
-        this summer.
         <br /> <br />
       </p>
     </div>

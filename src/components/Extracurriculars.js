@@ -1,16 +1,12 @@
-function Extracurriculars() {
+import { Heading } from "./Heading";
+function Extracurriculars({ prop, desktop }) {
   const experience = [
     {
-      position: "Project Lead",
+      position: "Project Lead, Haven",
       company: "UW Blueprint",
       logo: "blueprint",
       date: "May 2023 - December 2023",
-      experience: [
-        "React, Typescript, Node.js, Express.js, MongoDB, PrismaORM",
-        "Lead technical development team to build refugee and volunteer matching platform for non-profit Haven",
-        "Design project architecture including matching algorithm based on requirements from organization founders",
-        "Organize team development practices by scoping tickets, mentoring developers, and reviewing pull requests",
-      ],
+      experience: ["Typescript, Node.js, Express.js, MongoDB, PrismaORM, Docker", "Led 8 developers to build volunteer matching algorithm API platform for non-profit including project architecture and code reviews"],
     },
     {
       position: "Project Developer",
@@ -19,31 +15,37 @@ function Extracurriculars() {
       date: "September 2022 - April 2023",
       experience: ["React, Typescript, Node.js, Express.js, PostgreSQL", "Collaborated with development team to build review and creator booking platform for Canadian Children Book Centre"],
     },
+    {
+      position: "Computer Science Summer Institute",
+      company: "Google",
+      logo: "cssi",
+      date: "July 2021 - August 2021",
+      experience: ["JavaScript, Firebase, HTML, Bulma CSS", "Participated in a 4-week intensive computer science summer program for high-achieving students"],
+    },
   ];
 
   return (
-    <div className="px-5 mt-5 pb-5">
-      <h3 className="text-end mb-3">
-        <span className="title-text">extracurriculars &#127905;</span>
-      </h3>
-      <div className="mr-5">
-        <div>
+    <div className="px-lg-5 ms-3 mt-5 pb-5" ref={prop}>
+      <Heading title={"activities"} />
+      <div className="ms-lg-5 ps-lg-5 px-2 mt-3">
+        <div className={`d-flex ${desktop ? "flex-row" : "flex-column"}`}>
           {experience.map((exp, index) => {
-            const isEven = index % 2 === 0;
             return (
-              <div className={`mb-5 d-flex align-items-start justify-content-${isEven ? "start text-start" : "end text-end"}`}>
-                {isEven && (
+              <div style={{ width: desktop ? "33%" : "100%" }} className={`mb-3 d-flex flex-column align-items-start justify-content-start text-start`}>
+                <div className="d-flex flex-row align-items-start justify-content-start">
                   <div className="d-flex justify-content-center align-items-center">
                     <img className="exp-logo me-3" src={require("../images/logos/" + exp.logo + ".png")} alt={exp.company} />
                   </div>
-                )}
+                  <div>
+                    <h3 className="">
+                      <span className="highlight">{exp.position}</span>
+                    </h3>
+                    <p>
+                      {exp.company} | {exp.date}
+                    </p>
+                  </div>
+                </div>
                 <div>
-                  <h3 className="">
-                    <span className="highlight">{exp.position}</span>
-                  </h3>
-                  <p>
-                    {exp.company} | {exp.date}
-                  </p>
                   {exp.experience.map((responsibility, i) => {
                     if (i === 0) {
                       return (
@@ -55,11 +57,6 @@ function Extracurriculars() {
                     return <p>&#8227; {responsibility}</p>;
                   })}
                 </div>
-                {!isEven && (
-                  <div className="d-flex justify-content-center align-items-center">
-                    <img className="exp-logo ms-3" src={require("../images/logos/" + exp.logo + ".png")} alt={exp.company} />
-                  </div>
-                )}
               </div>
             );
           })}

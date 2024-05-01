@@ -1,19 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
 .App {
   text-align: center;
-  font-family: "Quicksand";
+  font-family: "Poppins";
+    color: #1B6F72;
+    width: 100%;
 }
 
 .highlight {
-  color: black;
+  color: #1B6F72;
   text-decoration: none;
-  background: linear-gradient(120deg, #FFE600 100%, #FFE600 100%);
+  font-weight: 600;
+    background: linear-gradient(120deg, #fff 100%, #fff 100%);
   background-repeat: no-repeat;
   background-size: 100% 35%;
-  background-position: 0 85%;
+    background-position: 0 85%;
 }
 
+.tag {
+  color: #1B6F72;
+  text-decoration: none;
+  font-weight: 600;
+  background: linear-gradient(120deg, #fff 100%, #fff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 85%;
+}
 .circ-img {
   width: 100%;
 }
@@ -30,14 +41,14 @@
 }
 
 .contact-link:hover {
-  background: linear-gradient(120deg, #FFE600 100%, #FFE600 100%);
+  background: linear-gradient(120deg, #fff 100%, #fff 100%);
   background-repeat: no-repeat;
   background-size: 100% 35%;
   background-position: 0 85%;
 }
 
 .title-text:hover {
-  background: linear-gradient(120deg, #FFE600 100%, #FFE600 100%);
+  background: linear-gradient(120deg, #fff 100%, #fff 100%);
   background-repeat: no-repeat;
   background-size: 100% 35%;
   background-position: 0 85%;
@@ -47,4 +58,168 @@
   background-color: rgba(0, 0, 0, 0);
   ;
   border: none;
+}
+.container-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.container-mobile {
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  overflow-y: scroll;
+  background-image: url('./images/assets/background.png');
+}
+
+.item {
+  min-width: 850pt;
+  background-image: url('./images/assets/background.png');
+}
+
+.itemdouble {
+  min-width: 1700pt;
+  background-image: url('./images/assets/background.png');
+}
+
+.font-body {
+  font-size: 15pt;
+}
+
+.container-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.container-scroll::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.container-scroll::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* fish */
+
+.fish {
+  width: 125px;
+  height: 45px;
+  position: relative;
+  animation: swim 2s ease-in-out infinite;
+}
+
+.fish-body {
+  width: 100%;
+  height: 100%;
+  background-color: #ff4000;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+}
+
+.fish-tail {
+  width: 20px;
+  height: 40px;
+  background-color: #ff4000;
+  position: absolute;
+  right: -15px;
+  bottom: 5px;
+  border-radius: 50% 0 0 50%;
+  transform-origin: left center;
+  animation: tail-flap 2s ease-in-out infinite;
+}
+
+.fish-fins {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+}
+
+.fish-mouth {
+  width: 20px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fish-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes tail-flap {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Cloud */
+
+.cloud {
+  position: relative;
+  width: 400px;
+  height: 175px;
+  background-color: #f1f1f1;
+  border-radius: 100px;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cloud:before,
+.cloud:after {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.cloud:before {
+  width: 100px;
+  height: 100px;
+  top: -40px;
+  left: 90px;
+}
+
+.cloud:after {
+  width: 150px;
+  height: 150px;
+  top: -80px;
+  right: 90px;
+}
+
+.cloud-text {
+  z-index: 1000;
 }
