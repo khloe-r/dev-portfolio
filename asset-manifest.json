@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.f343cc40.css",
-    "main.js": "/dev-portfolio/static/js/main.a8adcc55.js",
+    "main.css": "/dev-portfolio/static/css/main.fb9b1d74.css",
+    "main.js": "/dev-portfolio/static/js/main.0151f15a.js",
     "static/js/787.eef0f175.chunk.js": "/dev-portfolio/static/js/787.eef0f175.chunk.js",
     "static/media/apple-watch.png": "/dev-portfolio/static/media/apple-watch.571d503375d70bba83cd.png",
     "static/media/marketing-request.png": "/dev-portfolio/static/media/marketing-request.3731ddab85622897eb9f.png",
@@ -12,12 +12,12 @@
     "static/media/chess.png": "/dev-portfolio/static/media/chess.45d1ee2e0ef84f29e0f8.png",
     "static/media/pmclub.png": "/dev-portfolio/static/media/pmclub.aea3ebf3c247dfe56274.png",
     "index.html": "/dev-portfolio/index.html",
-    "main.f343cc40.css.map": "/dev-portfolio/static/css/main.f343cc40.css.map",
-    "main.a8adcc55.js.map": "/dev-portfolio/static/js/main.a8adcc55.js.map",
+    "main.fb9b1d74.css.map": "/dev-portfolio/static/css/main.fb9b1d74.css.map",
+    "main.0151f15a.js.map": "/dev-portfolio/static/js/main.0151f15a.js.map",
     "787.eef0f175.chunk.js.map": "/dev-portfolio/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f343cc40.css",
-    "static/js/main.a8adcc55.js"
+    "static/css/main.fb9b1d74.css",
+    "static/js/main.0151f15a.js"
   ]
 }
