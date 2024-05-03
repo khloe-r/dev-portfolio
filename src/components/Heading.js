@@ -2,7 +2,7 @@ import plane from "../images/assets/plane.png";
 import { useEffect, useState } from "react";
 
 export const Heading = ({ title }) => {
-  const [width, setWidth] = useState(false);
+  const [width, setWidth] = useState(true);
   const updateDimensions = () => {
     setWidth(window.innerWidth >= 978);
   };

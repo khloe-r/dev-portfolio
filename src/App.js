@@ -46,7 +46,7 @@ function App() {
 
         {width && (
           <>
-            <div className="text-white fs-1 fw-bold position-absolute top-50 p-2" style={{ left: 0, zIndex: 10, backgroundColor: "#ff4000" }} onClick={() => containerRef.current.scrollTo({ top: 0, left: containerRef.current.scrollLeft + 500, behavior: "smooth" })}>
+            <div className="text-white fs-1 fw-bold position-absolute top-50 p-2" style={{ left: 0, zIndex: 10, backgroundColor: "#ff4000" }} onClick={() => containerRef.current.scrollTo({ top: 0, left: containerRef.current.scrollLeft - 500, behavior: "smooth" })}>
               {"<"}
             </div>
             <div className="text-white fs-1 fw-bold position-absolute top-50 p-2" style={{ right: 0, zIndex: 10, backgroundColor: "#ff4000" }} onClick={() => containerRef.current.scrollTo({ top: 0, left: containerRef.current.scrollLeft + 500, behavior: "smooth" })}>

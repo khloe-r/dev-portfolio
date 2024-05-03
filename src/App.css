@@ -65,6 +65,7 @@
   height: 100vh;
   width: 100vw;
   overflow-x: scroll;
+  background-color: #36c0c5;
 }
 
 .container-mobile {
@@ -77,11 +78,13 @@
 
 .item {
   min-width: 850pt;
+  max-height: 594pt;
   background-image: url('./images/assets/background.png');
 }
 
 .itemdouble {
   min-width: 1700pt;
+  max-height: 594pt;
   background-image: url('./images/assets/background.png');
 }
 
