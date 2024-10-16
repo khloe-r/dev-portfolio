@@ -3,6 +3,13 @@ import { Heading } from "./Heading";
 function Experience({ prop, desktop }) {
   const experience = [
     {
+      position: "Software Engineer Intern, Funding",
+      company: "Stripe",
+      logo: "stripe",
+      date: "May 2024 - August 2024",
+      experience: ["Ruby on Rails, SQL, Typescript, React", "Improve the automatic reconciliation of wire transfers by 20% using data analysis to refactor the matching process", "Coordinate rollout of banking partner details migration for Canadian wire transfers used by 32+ merchants"],
+    },
+    {
       position: "Software Engineer Intern, Reporting",
       company: "StackAdapt",
       logo: "sa",
