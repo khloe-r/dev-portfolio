@@ -6,7 +6,7 @@ function Footer({ desktop }) {
       <div class="cloud">
         <div class="cloud-text mt-5 pt-4">
           <h3 className="text-bold">made with &#10084;&#65039; by khloe</h3>
-          <p>(c) April 2024</p>
+          <p>(c) January 2025</p>
         </div>
       </div>
 

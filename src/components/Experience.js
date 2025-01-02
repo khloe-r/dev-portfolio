@@ -7,7 +7,12 @@ function Experience({ prop, desktop }) {
       company: "Stripe",
       logo: "stripe",
       date: "May 2024 - August 2024",
-      experience: ["Ruby on Rails, SQL, Typescript, React", "Improve the automatic reconciliation of wire transfers by 20% using data analysis to refactor the matching process", "Coordinate rollout of banking partner details migration for Canadian wire transfers used by 32+ merchants"],
+      experience: [
+        "Ruby on Rails, SQL, Typescript, React",
+        "Improved the automatic reconciliation of wire transfers by 20% using data analysis to refactor the matching process",
+        "Redesigned unique code generation for merchants to improve legibility and increasing automatic reconciliation by code",
+        "Coordinated rollout of banking partner details migration for Canadian wire transfers used by 32+ merchants",
+      ],
     },
     {
       position: "Software Engineer Intern, Reporting",
@@ -22,27 +27,15 @@ function Experience({ prop, desktop }) {
       ],
     },
     {
-      position: "Software Engineer Intern, Book of Records",
+      position: "Software Engineer Intern x2",
       company: "Wealthsimple",
       logo: "ws",
-      date: "January 2023 - April 2023",
+      date: "January 2023 - April 2023 (Statements & Taxes), May 2022 - August 2022 (Design Systems)",
       experience: [
         "Java, Ruby on Rails, Typescript, Python, Apache Airflow, Sidekiq, GraphQL, AWS",
         "Built 9 management tools with GraphQL mutations in Ruby on Rails enabling finance team autonomy",
         "Implemented statement distribution using Java, Python and Apache Airflow saving up to $200,000 per year",
-        "Created nightly Sidekiq worker saving 5+ hours by automating the generation of monthly statement data",
-      ],
-    },
-    {
-      position: "Software Engineer Intern, Unified Experience",
-      company: "Wealthsimple",
-      logo: "ws",
-      date: "May 2022 - August 2022",
-      experience: [
-        "React Native, Typescript, Node.js, Datadog, Jest",
-        "Implemented React Native UI designs and Jest unit testing for Wealthsimple unified app launch",
         "Developed mobile components, functions, and documentation to enable 50+ mobile developers to build app UIs more efficiently",
-        "Created Datadog dashboard of component usage across 6 repositories using Node.js and GitHub Actions",
       ],
     },
     {

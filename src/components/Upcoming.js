@@ -6,7 +6,7 @@ function Upcoming() {
       <div className="mt-3 ms-lg-5 ps-lg-5 px-1 fs-3 text-start d-flex justify-content-start">
         <ul>
           <li>building new projects!</li>
-          <li>currently seeking a Winter/Summer 2025 internship!</li>
+          <li>visiting SF this winter and Chicago this summer!</li>
         </ul>
       </div>
     </div>
