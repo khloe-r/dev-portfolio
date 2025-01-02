@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dev-portfolio/static/css/main.fb9b1d74.css",
-    "main.js": "/dev-portfolio/static/js/main.14fdf4a7.js",
+    "main.js": "/dev-portfolio/static/js/main.ec43b50a.js",
     "static/js/787.eef0f175.chunk.js": "/dev-portfolio/static/js/787.eef0f175.chunk.js",
     "static/media/apple-watch.png": "/dev-portfolio/static/media/apple-watch.571d503375d70bba83cd.png",
     "static/media/marketing-request.png": "/dev-portfolio/static/media/marketing-request.3731ddab85622897eb9f.png",
@@ -13,11 +13,11 @@
     "static/media/pmclub.png": "/dev-portfolio/static/media/pmclub.aea3ebf3c247dfe56274.png",
     "index.html": "/dev-portfolio/index.html",
     "main.fb9b1d74.css.map": "/dev-portfolio/static/css/main.fb9b1d74.css.map",
-    "main.14fdf4a7.js.map": "/dev-portfolio/static/js/main.14fdf4a7.js.map",
+    "main.ec43b50a.js.map": "/dev-portfolio/static/js/main.ec43b50a.js.map",
     "787.eef0f175.chunk.js.map": "/dev-portfolio/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb9b1d74.css",
-    "static/js/main.14fdf4a7.js"
+    "static/js/main.ec43b50a.js"
   ]
 }
