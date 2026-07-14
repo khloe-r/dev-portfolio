@@ -11,19 +11,15 @@ function Contact({ prop }) {
       link: "https://www.linkedin.com/in/khloe-ramdhan/",
     },
     {
-      name: "devpost",
-      link: "https://devpost.com/khloe-r",
-    },
-    {
       name: "email",
-      link: "mailto:kramdhan@uwaterloo.ca",
+      link: "mailto:khloe.ramdhan@outlook.com",
     },
   ];
 
   return (
-    <div className="text-start px-lg-5 px-3 mt-5" ref={prop}>
-      <Heading title={"contact"} />
-      <p className="ps-lg-5 ms-lg-5 px-2 mt-3">
+    <div className="text-start pt-lg-5 px-lg-5 px-3 mt-5">
+      <Heading title={"contact"} prop={prop} />
+      <p className="ms-lg-5 ps-lg-5 px-2 mt-5 pt-5 pt-lg-0">
         {socials.map((soc, index) => {
           return (
             <span key={index}>

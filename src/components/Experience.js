@@ -3,6 +3,30 @@ import { Heading } from "./Heading";
 function Experience({ prop, desktop }) {
   const experience = [
     {
+      position: "Software Engineer Intern, ATS",
+      company: "Optiver",
+      logo: "optiver",
+      date: "June 2025 - August 2025",
+      experience: [
+        "C, SQL",
+        "Improved the automatic reconciliation of wire transfers by 20% using data analysis to refactor the matching process",
+        "Redesigned unique code generation for merchants to improve legibility and increasing automatic reconciliation by code",
+        "Coordinated rollout of banking partner details migration for Canadian wire transfers used by 32+ merchants",
+      ],
+    },
+    {
+      position: "Software Engineer Intern, Data Platform",
+      company: "Databricks",
+      logo: "databricks",
+      date: "January 2025 - April 2025",
+      experience: [
+        "Python, Terraform",
+        "Improved the automatic reconciliation of wire transfers by 20% using data analysis to refactor the matching process",
+        "Redesigned unique code generation for merchants to improve legibility and increasing automatic reconciliation by code",
+        "Coordinated rollout of banking partner details migration for Canadian wire transfers used by 32+ merchants",
+      ],
+    },
+    {
       position: "Software Engineer Intern, Funding",
       company: "Stripe",
       logo: "stripe",
@@ -27,10 +51,10 @@ function Experience({ prop, desktop }) {
       ],
     },
     {
-      position: "Software Engineer Intern x2",
+      position: "Software Engineer Intern, Statements and Taxes",
       company: "Wealthsimple",
       logo: "ws",
-      date: "January 2023 - April 2023 (Statements & Taxes), May 2022 - August 2022 (Design Systems)",
+      date: "January 2023 - April 2023",
       experience: [
         "Java, Ruby on Rails, Typescript, Python, Apache Airflow, Sidekiq, GraphQL, AWS",
         "Built 9 management tools with GraphQL mutations in Ruby on Rails enabling finance team autonomy",
@@ -39,36 +63,51 @@ function Experience({ prop, desktop }) {
       ],
     },
     {
-      position: "Software Engineer Intern, Smarthub",
-      company: "West Oak Design Inc.",
-      logo: "wod",
-      date: "May 2021 - August 2021",
-      experience: ["React, Firebase, Bootstrap CSS", "Led development team to build complete learning management system, Smart Hub, in 3 months using Firebase NoSQL database, Cloud Storage and authentication"],
+      position: "Software Engineer Intern, Design Systems",
+      company: "Wealthsimple",
+      logo: "ws",
+      date: "May 2022 - August 2022",
+      experience: [
+        "React Native, Typescript, Node.js",
+        "Built 9 management tools with GraphQL mutations in Ruby on Rails enabling finance team autonomy",
+        "Implemented statement distribution using Java, Python and Apache Airflow saving up to $200,000 per year",
+        "Developed mobile components, functions, and documentation to enable 50+ mobile developers to build app UIs more efficiently",
+      ],
     },
+    // {
+    //   position: "Software Engineer Intern, Smarthub",
+    //   company: "West Oak Design Inc.",
+    //   logo: "wod",
+    //   date: "May 2021 - August 2021",
+    //   experience: ["React, Firebase, Bootstrap CSS", "Led development team to build complete learning management system, Smart Hub, in 3 months using Firebase NoSQL database, Cloud Storage and authentication"],
+    // },
   ];
 
   return (
-    <div className="px-lg-5 mt-5 pb-5 mx-3" ref={prop}>
-      <Heading title={"experience"} />
-      <div className="ms-lg-5 ps-lg-5 mt-3">
-        <div className={`d-flex ${desktop ? "flex-row" : "flex-column"} justify-content-start gap-5`}>
+    <div className="pt-5 mt-5 pb-5 px-5">
+      <Heading title={"experience"} prop={prop} />
+      <div className="pt-5">
+        <div className={`d-flex ${desktop ? "flex-row row w-80" : "flex-column"} justify-content-start gap-3`}>
           {experience.map((exp, index) => {
             return (
-              <div className={`text-start ${desktop ? "w-25" : ""} px-3 px-lg-0`}>
+              <div className={`text-start ${desktop ? "col-4 mt-3" : ""} px-3 px-lg-0`}>
                 <div className={`d-flex align-items-start justify-content-start text-start`}>
                   <div className="d-flex justify-content-center align-items-center">
                     <img className="exp-logo me-3" src={require("../images/logos/" + exp.logo + ".png")} alt={exp.company} />
                   </div>
                   <div>
                     <h3 className="">
-                      <span className="highlight">{exp.position}</span>
+                      <span style={{ fontSize: 24 }} className="highlight">
+                        {exp.position}
+                      </span>
                     </h3>
-                    <p>
+                    <p style={{ fontSize: 18 }}>
                       {exp.company} | {exp.date}
                     </p>
+                    <p style={{ fontSize: 14 }}>&#8227; {exp.experience[0]}</p>
                   </div>
                 </div>
-                {exp.experience.map((responsibility, i) => {
+                {/* {exp.experience.map((responsibility, i) => {
                   if (i === 0) {
                     return (
                       <strong>
@@ -77,7 +116,7 @@ function Experience({ prop, desktop }) {
                     );
                   }
                   return <p>&#8227; {responsibility}</p>;
-                })}
+                })} */}
               </div>
             );
           })}

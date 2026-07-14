@@ -1,7 +1,7 @@
 import plane from "../images/assets/plane.png";
 import { useEffect, useState } from "react";
 
-export const Heading = ({ title }) => {
+export const Heading = ({ title, prop }) => {
   const [width, setWidth] = useState(true);
   const updateDimensions = () => {
     setWidth(window.innerWidth >= 978);
@@ -14,9 +14,8 @@ export const Heading = ({ title }) => {
 
   return (
     <div className="position-relative" style={{ width: width ? 450 : "18rem" }}>
-      <img src={plane} alt="" style={Object.assign({ display: "block" }, width ? { height: 62, width: 450 } : { height: "4rem", width: "18rem" })} />
-      <h3 className="text-bold position-absolute top-50 start-50 translate-middle">
-        <span className="title-text">{title}</span>
+      <h3 className="ms-5 ps-5 ps-lg-0 ms-lg-0 text-bold position-absolute top-50 translate-middle" ref={prop}>
+        <span className="font-title">{title}</span>
       </h3>
     </div>
   );

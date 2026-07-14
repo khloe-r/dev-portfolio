@@ -1,18 +1,35 @@
 import applewatch from "../images/projects/apple-watch.png";
 import slackbot from "../images/projects/marketing-request.png";
-import eco from "../images/projects/eco.png";
 import revealo from "../images/projects/reveal-o.png";
 import chess from "../images/projects/chess.png";
+import escapeo from "../images/projects/escape-o.png";
+import photobooth from "../images/projects/photobooth.png";
 import { Heading } from "./Heading";
 
 function Projects({ prop }) {
   const projects = [
     {
+      name: "Escape-O",
+      date: "April 2024",
+      img: escapeo,
+      descript: "Virtual escape game, self-drawn graphics",
+      link: "https://escape-io.vercel.app/",
+      languages: ["Typescript", "React", "Next.js"],
+    },
+    {
+      name: "Photobooth",
+      date: "April 2024",
+      img: photobooth,
+      descript: "Customizable virtual photobooth",
+      link: "https://sanj-photobooth.vercel.app/",
+      languages: ["Typescript", "React", "Next.js"],
+    },
+    {
       name: "Reveal-o",
       date: "April 2024",
       img: revealo,
-      descript: "Daily word game where users attempt to guess a phrase as fast as possible",
-      link: "https://github.com/khloe-r/reveal-o",
+      descript: "Daily word game to guess a common phrase as fast as possible",
+      link: "https://reveal-o.vercel.app/",
       languages: ["MongoDB", "Typescript", "React", "Next.js"],
     },
     {
@@ -23,22 +40,22 @@ function Projects({ prop }) {
       link: "https://github.com/khloe-r/apple-watch-notion-integration",
       languages: ["Swift"],
     },
-    {
-      name: "Chess",
-      date: "December 2022",
-      img: chess,
-      descript: "Object Oriented Software Development Project: Chess game with graphical interface and computer opponent",
-      link: "",
-      languages: ["C++"],
-    },
-    {
-      name: "Eco Challenger",
-      date: "August 2022",
-      img: eco,
-      descript: "Environmental competition incentivizing users to complete eco-friendly actions to win points",
-      link: "https://github.com/khloe-r/eco-challenger",
-      languages: ["MongoDB", "Node.js", "Express.js", "Passport.js", "React", "Chakra-UI"],
-    },
+    // {
+    //   name: "Chess",
+    //   date: "December 2022",
+    //   img: chess,
+    //   descript: "Object Oriented Software Development Project: Chess game with graphical interface and computer opponent",
+    //   link: "",
+    //   languages: ["C++"],
+    // },
+    // {
+    //   name: "Eco Challenger",
+    //   date: "August 2022",
+    //   img: eco,
+    //   descript: "Environmental competition incentivizing users to complete eco-friendly actions to win points",
+    //   link: "https://github.com/khloe-r/eco-challenger",
+    //   languages: ["MongoDB", "Node.js", "Express.js", "Passport.js", "React", "Chakra-UI"],
+    // },
     {
       name: "Marketing Request Bot",
       date: "June 2022",
@@ -50,40 +67,25 @@ function Projects({ prop }) {
   ];
 
   return (
-    <div className="text-start px-lg-5 px-3 mt-5" ref={prop}>
-      <Heading title={"projects"} />
-      <div className="row ms-lg-5 ps-lg-5 px-2">
+    <div className="pt-5 mt-5 pb-5 px-5">
+      <div className="mb-5">
+        <Heading title={"projects"} prop={prop} />
+      </div>
+      <div className="row ms-lg-5 ps-lg-5 px-2 gap-5">
         {projects.map((pro, i) => {
           return (
-            <div className="col-lg-2 col-md-6 col-sm-12 text-center" key={i}>
+            <div style={{ transform: i % 2 === 0 ? "rotate(2deg)" : "rotate(-2deg)" }} className="col-lg-2 col-md-6 col-sm-12 text-center project-tile" key={pro.name}>
               <div className="circ-border d-flex justify-content-center align-items-center" style={{ minHeight: 200 }}>
                 <img className="circ-img" src={pro.img} alt={pro.name + "project preview"}></img>
               </div>
-              <h4 className="mt-2">{pro.name}</h4>
+              <h4 className="mt-2">
+                {pro.name} -{" "}
+                <a href={pro.link} target="_blank" rel="noreferrer">
+                  &#x1f517;
+                </a>
+              </h4>
 
-              <p className="">
-                {pro.date}
-                {pro.link && (
-                  <span>
-                    {" "}
-                    -{" "}
-                    <a href={pro.link} target="_blank" rel="noreferrer">
-                      &#x1f517;
-                    </a>
-                  </span>
-                )}
-              </p>
-              <p>{pro.descript}</p>
-              <p style={{ lineHeight: 1.75 }}>
-                {pro.languages.map((lang) => {
-                  return (
-                    <span>
-                      {" "}
-                      <span className="tag px-2"> {lang}</span>{" "}
-                    </span>
-                  );
-                })}
-              </p>
+              <p style={{ fontSize: 14 }}>{pro.descript}</p>
             </div>
           );
         })}
