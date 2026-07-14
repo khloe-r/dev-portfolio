@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.fb9b1d74.css",
-    "main.js": "/dev-portfolio/static/js/main.ec43b50a.js",
+    "main.css": "/dev-portfolio/static/css/main.e85ef250.css",
+    "main.js": "/dev-portfolio/static/js/main.61520818.js",
     "static/js/787.eef0f175.chunk.js": "/dev-portfolio/static/js/787.eef0f175.chunk.js",
+    "static/media/photobooth.png": "/dev-portfolio/static/media/photobooth.99c97711f74c64bf2fe2.png",
+    "static/media/escape-o.png": "/dev-portfolio/static/media/escape-o.3ad46e0875fee547184a.png",
     "static/media/apple-watch.png": "/dev-portfolio/static/media/apple-watch.571d503375d70bba83cd.png",
     "static/media/marketing-request.png": "/dev-portfolio/static/media/marketing-request.3731ddab85622897eb9f.png",
-    "static/media/eco.png": "/dev-portfolio/static/media/eco.645096542d8cd4a39ca6.png",
     "static/media/ws.png": "/dev-portfolio/static/media/ws.86fdb2ac9a4030a376d3.png",
     "static/media/reveal-o.png": "/dev-portfolio/static/media/reveal-o.9010406bdd8671e66275.png",
     "static/media/wod.png": "/dev-portfolio/static/media/wod.a05aa4c9915c67de4ec8.png",
     "static/media/chess.png": "/dev-portfolio/static/media/chess.45d1ee2e0ef84f29e0f8.png",
+    "static/media/optiver.png": "/dev-portfolio/static/media/optiver.4b23d89dd70e3a4c3b09.png",
     "static/media/pmclub.png": "/dev-portfolio/static/media/pmclub.aea3ebf3c247dfe56274.png",
     "index.html": "/dev-portfolio/index.html",
-    "main.fb9b1d74.css.map": "/dev-portfolio/static/css/main.fb9b1d74.css.map",
-    "main.ec43b50a.js.map": "/dev-portfolio/static/js/main.ec43b50a.js.map",
+    "main.e85ef250.css.map": "/dev-portfolio/static/css/main.e85ef250.css.map",
+    "main.61520818.js.map": "/dev-portfolio/static/js/main.61520818.js.map",
     "787.eef0f175.chunk.js.map": "/dev-portfolio/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb9b1d74.css",
-    "static/js/main.ec43b50a.js"
+    "static/css/main.e85ef250.css",
+    "static/js/main.61520818.js"
   ]
 }
